@@ -91,6 +91,8 @@ class ContactViewModel(private val dao: ContactDao):ViewModel() {
                     phoneNumber = event.phoneNumber
                 ) }
             }
+
+
             ContactEvent.showDialodge -> {
                 _state.update { it.copy(
                     isAddingContact = true
